@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yusuf.simpleblog.RegisterActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nameField"
+        android:hint="Your Name"
+        android:background="@drawable/input_outline"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/nameField"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/emailField"
+        android:hint="Email"
+        android:background="@drawable/input_outline"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/emailField"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/passwordField"
+        android:hint="Password"
+        android:background="@drawable/input_outline"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordField"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/registerBtn"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

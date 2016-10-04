@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yusuf.simpleblog.LoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginEmailField"
+        android:hint="Email"
+        android:background="@drawable/input_outline"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/loginEmailField"
+        android:id="@+id/loginPasswordField"
+        android:hint="Password"
+        android:background="@drawable/input_outline"
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPasswordField"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginBtn"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:text="Create New Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/newAccountBtn"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/googleBtn"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </com.google.android.gms.common.SignInButton>
+
+</RelativeLayout>

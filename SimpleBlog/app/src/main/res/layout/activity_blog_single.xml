@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blog_single"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yusuf.simpleblog.BlogSingleActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleBlogImage"
+        android:src="@mipmap/add_btn"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="Blog Title Goes Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleBlogImage"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/singleBlogTitle"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="Blog Description Goes Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleBlogTitle"
+        android:layout_alignRight="@+id/singleBlogTitle"
+        android:layout_alignEnd="@+id/singleBlogTitle"
+        android:id="@+id/singeBlogDesc"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp" />
+
+    <Button
+        android:text="Remove Post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/singleBlogRemoveBtn"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>
